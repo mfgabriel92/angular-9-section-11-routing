@@ -2,8 +2,7 @@
   <div class="col-lg-6">
     <div class="list-group">
       <a
-        [routerLink]="['/servers', 1, 'edit']"
-        [queryParams]="{ allowEditing: 1 }"
+        [routerLink]="['/servers', server.id]"
         class="list-group-item"
         *ngFor="let server of servers"
       >
