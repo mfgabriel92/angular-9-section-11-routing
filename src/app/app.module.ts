@@ -12,6 +12,8 @@ import { UsersComponent } from './users/users.component';
 import { UserComponent } from './users/user/user.component';
 import { ServersService } from './servers/servers.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AuthGuardService } from './auth-guard.service';
+import { AuthService } from './auth.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PageNotFoundComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [ServersService],
+  providers: [AuthGuardService, AuthService, ServersService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
