@@ -3,13 +3,26 @@
     <div class="col-lg-12 col-md-12">
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/">Home</a>
+          <a
+            class="nav-link"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLink="/"
+            >Home</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/servers">Servers</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/servers"
+            >Servers</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/users']">Users</a>
+          <a
+            class="nav-link"
+            routerLinkActive="active"
+            [routerLink]="['/users']"
+            >Users</a
+          >
         </li>
       </ul>
     </div>
