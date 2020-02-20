@@ -11,10 +11,10 @@ import { EditServerComponent } from './servers/edit-server/edit-server.component
 import { UsersComponent } from './users/users.component';
 import { UserComponent } from './users/user/user.component';
 import { ServersService } from './servers/servers.service';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AuthGuardService } from './auth-guard.service';
 import { AuthService } from './auth.service';
 import { CanDeactivateGuardService } from './servers/edit-server/can-deactivate-guard.service';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { CanDeactivateGuardService } from './servers/edit-server/can-deactivate-
     EditServerComponent,
     UserComponent,
     UsersComponent,
-    PageNotFoundComponent
+    ErrorPageComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [
